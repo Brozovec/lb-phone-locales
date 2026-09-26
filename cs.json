@@ -73,6 +73,12 @@
             "TIME_ZONE": "Časové pásmo",
             "LANGUAGE_REGION": "Jazyk a region",
             "LANGUAGE": "Jazyk",
+            "LANGUAGE_RESTART_POPUP": {
+                "TITLE": "Změnit jazyk",
+                "TEXT": "Změna jazyka restartuje telefon. Chcete pokračovat?",
+                "CANCEL": "Zrušit",
+                "CONFIRM": "Změnit"
+            },
             "TEMPERATURE": "Teplota",
             "CELCIUS": "Celsia",
             "FAHRENHEIT": "Fahrenheita",
@@ -88,6 +94,8 @@
             "DEFAULT": "Výchozí",
             "PHONE_STORAGE": "Úložiště telefonu",
             "STORAGE": "Úložiště",
+            "MICROPHONE": "Mikrofon",
+            "MICROPHONE_DESCRIPTION": "Vyberte, který mikrofon se má používat pro nahrávání",
             "USED": "Využito",
             "OF": "z",
             "DISPLAY_BRIGHTNESS": "Displej a jas",
@@ -368,6 +376,12 @@
             "PROCEED": "Pokračovat",
             "OK": "OK",
             "EDIT": "Upravit",
+            "EDITOR_MARKUP": "Anotace",
+            "EDITOR_CROP": "Oříznout",
+            "EDITOR_SAVE": "Uložit",
+            "EDITOR_SIZE": "Velikost",
+            "EDITOR_UNDO": "Zpět",
+            "EDITOR_APPLY_CROP": "Použít oříznutí",
             "DONE": "Hotovo",
             "DELETE": "Smazat",
             "SELECT_ITEMS": "Vybrat položky",
@@ -512,8 +526,15 @@
             "SENT_LOCATION_SHORT": "Sdílel(a) svou polohu",
             "TRIED_TO_CALL": "{number} se vám pokusil(a) zavolat",
             "DELETE": "Smazat",
+            "REPLY": "Odpovědět",
+            "REACT": "Reagovat",
+            "REPLYING_TO": "Odpověď na",
+            "ATTACHMENT": "Příloha",
+            "YOU": "Vy",
             "GROUP": "Skupina",
             "GROUP_NAME": "Název skupiny",
+            "ADD_PHOTO": "Přidat fotku",
+            "REMOVE_PHOTO": "Odebrat fotku",
             "REMOVE_POPUP": {
                 "TITLE": "Odstranit člena",
                 "TEXT": "Opravdu chcete odstranit {name} ze skupiny?",
@@ -562,6 +583,11 @@
                 "CANCEL": "Zrušit",
                 "REMOVE": "Odstranit"
             },
+            "FAILED_SEND": {
+                "TITLE": "Zprávu se nepodařilo odeslat",
+                "DESCRIPTION": "Zprávu se nepodařilo odeslat",
+                "OK": "OK"
+            },
             "MARK_AS_READ": "Označit jako přečtené",
             "MESSAGE_DELETED": "Zpráva smazána",
             "OPEN_IN_MAPS": "Otevřít v Mapách",
@@ -576,6 +602,10 @@
             "GROUP_MEMBER_LIMIT_NOTIFICATION": {
                 "TITLE": "Dosažen limit členů",
                 "CONTENT": "Dosáhli jste maximálního počtu členů ve skupině ({limit})."
+            },
+            "REACT_NOTIFICATION": {
+                "TITLE": "Nová reakce",
+                "CONTENT": "{name} reagoval(a) {reaction} na vaši zprávu"
             }
         },
         "PHONE": {
@@ -753,6 +783,10 @@
                 "TITLE": "Nepodařilo se přidat peníze",
                 "DESCRIPTION": "Nepodařilo se přidat peníze na zadaný účet"
             },
+            "UNKNOWN_ERROR": {
+                "TITLE": "Neznámá chyba",
+                "DESCRIPTION": "Došlo k neznámé chybě"
+            },
 
             "OK": "OK"
         },
@@ -858,13 +892,23 @@
             "MESSAGE": "Zpráva",
             "CALL": "Volat",
             "REMOVE": "Odstranit",
+            "TRANSACTION": "Zveřejněno na Bazaru",
 
+            "CREATION_COST_POPUP": {
+                "TITLE": "Vytvořit inzerát",
+                "DESCRIPTION": "Vytvoření inzerátu stojí {cost}, chcete pokračovat?",
+                "CANCEL": "Zrušit",
+                "PROCEED": "Pokračovat"
+            },
             "ERROR_POPUP": {
                 "TITLE": "Chyba",
                 "NO_TITLE": "Musíte zadat název",
                 "NO_DESCRIPTION": "Musíte zadat popis",
                 "NO_PRICE": "Musíte zadat cenu",
                 "NO_ATTACHMENTS": "Musíte připojit alespoň jeden obrázek",
+                "NO_MONEY": "Nemáte dostatek peněz na vytvoření inzerátu",
+                "RATE_LIMIT": "Vytváříte inzeráty příliš často, zkuste to později",
+                "POST_LIMIT": "Dosáhli jste maximálního počtu inzerátů",
                 "OK": "OK"
             },
             "DELETE_POPUP": {
@@ -885,10 +929,22 @@
             "PRICE": "Cena",
             "POST": "Zveřejnit",
             "CALL": "Volat",
+            "HOME": "Domů",
+            "YOUR_POSTS": "Vaše příspěvky",
+            "TRANSACTION": "Zveřejněno na Pages",
+            "CREATION_COST_POPUP": {
+                "TITLE": "Vytvořit příspěvek",
+                "DESCRIPTION": "Vytvoření příspěvku stojí {cost}, chcete pokračovat?",
+                "CANCEL": "Zrušit",
+                "PROCEED": "Pokračovat"
+            },
             "ERROR_POPUP": {
                 "TITLE": "Chyba",
                 "NO_TITLE": "Musíte zadat název",
                 "NO_DESCRIPTION": "Musíte zadat popis",
+                "NO_MONEY": "Nemáte dostatek peněz na vytvoření příspěvku",
+                "RATE_LIMIT": "Vytváříte příspěvky příliš často, zkuste to později",
+                "POST_LIMIT": "Dosáhli jste maximálního počtu příspěvků",
                 "OK": "OK"
             },
             "DELETE_POPUP": {
@@ -1219,6 +1275,7 @@
             "REPLIES": "Odpovědi",
             "MEDIA": "Média",
             "LIKES": "To se mi líbí",
+            "RETWEETS": "Sdílení",
             "CANCEL": "Zrušit",
             "TWEET": "Příspěvek",
             "TWEET_REPLY": "Napište svou odpověď",
@@ -1227,7 +1284,7 @@
             "SAVE": "Uložit",
             "NAME": "Jméno",
             "JOIN_DATE": "Datum připojení",
-            "PROTECTED_POSTS": "Chránit své příspěvky",
+            "PRIVATE_ACCOUNT": "Soukromý účet",
             "BIO": "Bio",
             "SIGN_OUT": "Odhlásit se",
             "CHANGE_PASSWORD": "Změnit heslo",
@@ -1271,6 +1328,14 @@
                 "CANCEL": "Zrušit",
                 "PROCEED": "Pokračovat"
             },
+            "VERIFIED": {
+                "LABEL": "Ověřený účet",
+                "DESCRIPTION": "Tento účet je ověřený."
+            },
+            "VERIFIED_GOVERNMENT": {
+                "LABEL": "Vládní účet",
+                "DESCRIPTION": "Tento účet je oficiální vládní účet."
+            },
             "YOU": "Vy",
             "FOLLOW": "Sledovat",
             "PENDING": "Čeká na vyřízení",
@@ -1301,6 +1366,9 @@
             "SEARCH_DIRECT_MESSAGES": "Hledat přímé zprávy",
             "SEARCH_TWITTER": "Hledat Birdy",
             "MESSAGE_PLACEHOLDER": "Zpráva...",
+            "MESSAGES": "Zprávy",
+            "SEARCH_PEOPLE": "Hledat lidi",
+            "CHANGE_PHOTO": "Změnit fotku",
             "NOW": "Nyní",
             "LOGIN": "Přihlásit se",
             "NEXT": "Další",
@@ -1325,6 +1393,7 @@
             "ACTIONS": "Akce",
             "COMPANIES": "Společnosti",
             "MESSAGES": "Zprávy",
+            "JOBS": "Zaměstnání",
             "SETTINGS": "Nastavení",
 
             "CLOSED": "Zavřeno",
@@ -1390,6 +1459,22 @@
                 "DESCRIPTION": "Opravdu chcete volat {name}?",
                 "CANCEL": "Zrušit",
                 "PROCEED": "Pokračovat"
+            },
+            "LEAVE_POPUP": {
+                "TITLE": "Odejít z práce",
+                "DESCRIPTION": "Opravdu chcete odejít z {name}?",
+                "CANCEL": "Zrušit",
+                "PROCEED": "Odejít"
+            },
+            "QUICK_REPLIES": {
+                "REQUEST_LOCATION": {
+                    "TITLE": "Vyžádat polohu",
+                    "MESSAGE": "Můžete prosím uvést svou polohu?"
+                },
+                "OFFICER_EN_ROUTE": {
+                    "TITLE": "Jednotka na cestě",
+                    "MESSAGE": "Jednotka je na cestě k vaší poloze."
+                }
             }
         },
         "CRYPTO": {
@@ -1407,6 +1492,11 @@
             "TOO_HIGH": "Částka je příliš vysoká (max {amount})",
             "NO_NUMBER": "Nebylo poskytnuto telefonní číslo",
             "INVALID_NUMBER": "Neplatné telefonní číslo (uživatel nemusí být online)",
+            "CHECK_FAILED": "Ověření se nezdařilo",
+            "BUY_DISABLED": "Nákup této mince byl zakázán",
+            "SELL_DISABLED": "Prodej této mince byl zakázán",
+            "INVALID_COIN_PRICE": "Tato mince nemá žádnou hodnotu",
+            "TRANSFER_DISABLED": "Převod této mince byl zakázán",
             "ERROR": "Chyba",
             "CLOSE": "Zavřít",
             "BUY_POPUP": {
@@ -1435,6 +1525,11 @@
                 "TITLE": "Úspěšně převedeno",
                 "DESCRIPTION": "Úspěšně jste převedli ${amount} {coin} uživateli {number}",
                 "CLOSE": "Zavřít"
+            },
+            "REFUND_TRANSACTION": "Vrácení peněz za odstraněné kryptoměny.",
+            "CONVERT_NOTIFICATION": {
+                "TITLE": "Kryptoměny převedeny",
+                "DESCRIPTION": "Některé kryptoměny byly odstraněny a převedeny na {amount} {coinName}."
             }
         },
         "TIKTOK": {
@@ -1607,7 +1702,9 @@
             "BOOKMARKS": "Záložky",
             "BOOKMARK_REMOVE": "Odebrat záložku",
             "NO_BOOKMARKS": "Zatím žádné záložky",
-            "NO_HISTORY": "zatím žádná historie"
+            "NO_HISTORY": "zatím žádná historie",
+            "FAILED_LOAD_PAGE": "Web nelze v této aplikaci otevřít",
+            "FAILED_LOAD_PAGE_DESCRIPTION": "Tento web nepovoluje zobrazení v iframe. Nejedná se o chybu."
         }
     },
     "COMPONENTS": {
@@ -1730,6 +1827,11 @@
         "FONT_AND_COLOR": "Písmo a barva"
     },
     "MISC": {
+        "ERROR": {
+            "TITLE": "Chyba",
+            "DESCRIPTION": "Při provádění akce došlo k chybě",
+            "OK": "OK"
+        },
         "ORDINAL": {
             "ZERO": ".",
             "ONE": ".",
@@ -1742,6 +1844,10 @@
             "TITLE": "Chyba",
             "DESCRIPTION": "Pokoušíte se provést akci, která vyžaduje připojení k internetu, vypněte režim letadla nebo získejte signál pro pokračování.",
             "OK": "OK"
+        },
+        "NO_CONNECTION": {
+            "TITLE": "Žádné připojení",
+            "DESCRIPTION": "K používání této aplikace potřebujete přístup k internetu."
         },
         "TODAY_TIME": "Dnes, {hours}:{minutes}",
         "YESTERDAY_TIME": "Včera, {hours}:{minutes}",
@@ -1767,7 +1873,10 @@
             "CANCEL": "Zrušit",
             "PROCEED": "Pokračovat",
             "OK": "OK"
-        }
+        },
+
+        "COPY": "Kopírovat",
+        "OPEN_IN_BROWSER": "Otevřít v prohlížeči"
     },
     "BACKEND": {
         "CALLS": {
@@ -1835,12 +1944,10 @@
         "MISC": {
             "VERIFIED": "Váš účet byl ověřen",
             "X_PHONE": "Telefon {name}",
-
             "LOGGED_OUT_PASSWORD": {
                 "TITLE": "Byli jste odhlášeni",
                 "DESCRIPTION": "Byli jste odhlášeni ze svého účtu, protože bylo změněno vaše heslo."
             },
-
             "DELETED_NOTIFICATION": {
                 "TITLE": "Účet smazán",
                 "DESCRIPTION": "Váš účet byl smazán."
